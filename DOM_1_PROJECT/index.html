@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter Application</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    main {
+      border: 1px solid rgb(0 0 0 / 0.2);
+      margin: 0 auto;
+      padding: 10px;
+      width: 300px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+
+    #input {
+      width: 24px;
+      height: 23px;
+      text-align: center;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2px;
+      margin: 5px 0;
+    }
+    button {
+      padding: 0 5px;
+    }
+
+    section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    
+  </style>
+  <body>
+    <section>
+      <main>
+        <h1>Counter App</h1>
+        <div>
+          <button id="dec-button" onclick="decrement()">Decrement by 1</button>
+          <input type="text" id="input" />
+          <button id="inc-button" onclick="increment()">Increment by 1</button>
+        </div>
+        <button id="reset-button" onclick="reset()">Reset Value</button>
+      </main>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
